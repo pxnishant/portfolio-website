@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Geist-Med;
+    src: url(fonts/Geist-Medium.ttf);
+}
+
+@font-face {
+    font-family: Geist-R;
+    src: url(fonts/Geist-Regular.ttf);
+}
+
+:root {
+    --gray-1:#111;
+    --gray-2:#191919;
+    --gray-3:#222;
+    --gray-4:#2a2a2a;
+    --gray-5:#313131;
+    --gray-6:#3a3a3a;
+    --gray-7:#484848;
+    --gray-8:#606060;
+    --gray-9:#6e6e6e;
+    --gray-10:#7b7b7b;
+    --gray-11:#b4b4b4;
+    --gray-12:#eee
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*height or width we set = content + padding + margin*/
+    font-family: Geist-R, sans-serif;
+    /* border: 1px solid white !important; */
+}   
+
+header, main, footer {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--gray-1);
+    color: var(--gray-12);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between; /*aligns on main axis*/
+    align-items: center; /*aligns on cross axis*/
+    flex-wrap: wrap; /*by default: nowrap. but when set to wrap
+    when multiple elements cant fit on main axis, they comfortably go to the next row*/
+}
+
+.content {
+    display: flex;
+    padding-top: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.desc {
+    padding-top: 32px;
+    color: var(--gray-11)
+}
+
+.links-info i {
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 48px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.links-info {
+    display: flex;
+
+}
+
+a {
+    color: var(--gray-11)
+}
+
+
+
